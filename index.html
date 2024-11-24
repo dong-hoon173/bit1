@@ -672,6 +672,54 @@
         .modal-content {
             animation: zoomIn 0.3s ease-out;
         }
+
+.table-of-contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .toc-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background: rgba(247, 147, 26, 0.1);
+        border-radius: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .toc-item:hover {
+        transform: translateX(10px);
+        background: rgba(247, 147, 26, 0.2);
+    }
+
+    .toc-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #F7931A;
+        line-height: 1;
+    }
+
+    .toc-content h3 {
+        margin: 0;
+        color: #F7931A;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .toc-content p {
+        margin: 0;
+        color: #ffffff;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+        .table-of-contents {
+            grid-template-columns: 1fr;
+        }
+    }
     </style>
 </head>
 <body>
@@ -690,6 +738,57 @@
 <br>
 
         </div>
+
+<div class="slide">
+    <div class="content-card fade-in">
+        <h2 class="centered-title">목차</h2>
+        <div class="table-of-contents">
+            <div class="toc-item">
+                <div class="toc-number">01</div>
+                <div class="toc-content">
+                    <h3>비트코인의 혁신</h3>
+                    <p>현재 시장 상황과 주요 통계</p>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-number">02</div>
+                <div class="toc-content">
+                    <h3>탄생 배경</h3>
+                    <p>2008년 금융위기와 비트코인의 탄생</p>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-number">03</div>
+                <div class="toc-content">
+                    <h3>비트코인의 의의</h3>
+                    <p>블록체인 기술과 금융 혁신</p>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-number">04</div>
+                <div class="toc-content">
+                    <h3>작동원리</h3>
+                    <p>블록체인 기술과 탈중앙화</p>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-number">05</div>
+                <div class="toc-content">
+                    <h3>특징과 장점</h3>
+                    <p>비트코인의 주요 특성</p>
+                </div>
+            </div>
+            <div class="toc-item">
+                <div class="toc-number">06</div>
+                <div class="toc-content">
+                    <h3>현재와 미래</h3>
+                    <p>현재 상황과 미래 전망</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
         <!-- 2. 서론 슬라이드 -->
         <div class="slide">
